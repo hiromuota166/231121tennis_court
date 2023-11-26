@@ -1,0 +1,4 @@
+{
+  "cSpell.words": ["danjyo"],
+  "python.analysis.extraPaths": ["./scraper"]
+}

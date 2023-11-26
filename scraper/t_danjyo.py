@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from browser import Browser
 
-def main():
+def danjyo():
   browser = Browser()
 
   #URLにアクセス
@@ -24,6 +24,8 @@ def main():
   #予約状況からみるをクリック
   browser.click_specific_button_by_name("button")
 
-
+  #予約状況を取得
+  open_court = browser.get_text_by_class_name("table_base")
+  return open_court
 if __name__ == "__main__":
-  main()
+  danjyo()
