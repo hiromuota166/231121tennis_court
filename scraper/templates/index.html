@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>結果</title>
-  <link rel = 'stylesheet' href = "{{url_for('static', filename= 'css/style.css')}}">
+  <!-- flaskのlink方法 -->
+  <link rel="stylesheet" href= "../static//style.css">
 </head>
 <body>
   <h1>予約状況</h1>
   <div>
     {{data|safe}}
   </div>
-  <script src = "{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

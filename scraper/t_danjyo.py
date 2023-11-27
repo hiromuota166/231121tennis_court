@@ -5,6 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from browser import Browser
+from shaping import replace_img_with_div
 
 def danjyo():
   browser = Browser()
@@ -26,6 +27,12 @@ def danjyo():
 
   #予約状況を取得
   open_court = browser.get_html_by_class_name("table_base")
-  return open_court
+
+  #不要な改行を取り除く
+  formatted_open_court = open_court[0].replace("\n", "")
+
+  #文章整形を適用
+  final_output = replace_img_with_div(formatted_open_court)
+  return final_output
 if __name__ == "__main__":
   danjyo()
