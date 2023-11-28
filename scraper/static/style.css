@@ -1,4 +1,13 @@
 /* 成功！！！！！！！！！！！！！！！！ */
 body {
-  background-color: aquamarine;
+  background-color: #f5f5f5;
+}
+table {
+  border: 2px solid #555;
+  border-collapse: collapse;
+  font:
+    16px "Lucida Grande",
+    "Helvetica",
+    "Arial",
+    sans-serif;
 }

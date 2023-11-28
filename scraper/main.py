@@ -1,6 +1,5 @@
 from flask import Flask, render_template, url_for
 from t_danjyo import danjyo
-import os
 
 app = Flask(__name__)
 

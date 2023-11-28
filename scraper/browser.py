@@ -6,7 +6,7 @@ import time
 class Browser:
     def __init__(self):
         options = Options()
-        options.headless = True
+        options.headless = False
         self.driver = webdriver.Chrome(options=options)
 
     # urlを開く
