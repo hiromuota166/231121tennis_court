@@ -1,7 +1,2 @@
 Selenium
-webdriver
-Options
-time
-Browser
-BeautifulSoup
 Flask
