@@ -1,4 +1,4 @@
 Selenium
 Flask
 beautifulsoup4
-gunicorn==<version>
+gunicorn==21.2.0
