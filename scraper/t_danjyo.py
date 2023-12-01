@@ -35,5 +35,6 @@ def danjyo():
     # h1タグで定休日の文言を取得
     closed_day = "定休日です"
     return closed_day
+
 if __name__ == "__main__":
   danjyo()
