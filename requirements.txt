@@ -1,4 +1,5 @@
 Selenium
 Flask
 beautifulsoup4
+t_danjyo
 gunicorn==21.2.0
