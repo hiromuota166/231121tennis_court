@@ -1,7 +1,7 @@
 # ゴールは指定した日付の予約状況を取得すること
 import time
-from test.browser import Browser
-from test.shaping import replace_img_with_div
+from browser import Browser
+from shaping import replace_img_with_div
 
 def danjyo():
   browser = Browser()

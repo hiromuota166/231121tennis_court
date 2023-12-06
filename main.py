@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from test.t_danjyo import danjyo
+from t_danjyo import danjyo
 
 app = Flask(__name__)
 

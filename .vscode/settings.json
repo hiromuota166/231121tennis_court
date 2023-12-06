@@ -1,4 +1,4 @@
 {
-  "cSpell.words": ["danjyo"],
-  "python.analysis.extraPaths": ["./scraper"]
+  "cSpell.words": ["danjyo"]
+  // "python.analysis.extraPaths": ["./scraper"]
 }
