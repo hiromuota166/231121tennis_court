@@ -6,7 +6,7 @@ import time
 class Browser:
     def __init__(self):
         options = Options()
-        options.headless = True
+        options.headless = False
         self.driver = webdriver.Chrome(options=options)
 
     # urlを開く
@@ -67,3 +67,12 @@ class Browser:
     def click_button_by_value(self, value):
         self.driver.find_element_by_css_selector(f"input[value='{value}']").click()
         time.sleep(10)
+
+    #クラス名を指定して、ボタンをクリック
+    def click_button_by_class_name(self, class_name):
+        self.driver.find_element_by_class_name(class_name).click()
+        time.sleep(10)
+
+    #Browserを閉じる
+    def close_browser(self):
+        self.driver.quit()
