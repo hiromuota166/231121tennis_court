@@ -8,5 +8,9 @@ def index():
     data = danjyo()
     return render_template('index.html', data=data)
 
+@app.route('/hello')
+def hello():
+    return 'Hello, World!'
+
 if __name__ == '__main__':
     app.run(debug=True)
